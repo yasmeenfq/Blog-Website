@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,71 +10,71 @@
       padding: 0;
       background: #eef2f3;
       color: #222;
-    }header {
-  background: #0077cc;
-  color: white;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-.post {
-  background: white;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-left: 5px solid #0077cc;
-  border-radius: 5px;
-}
-
-.post img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.post .date {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-footer {
-  background: #004466;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .post {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 5px solid #0077cc;
+      border-radius: 5px;
+      display: block;
+    }
+    .post img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .post .date {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer {
+      background: #004466;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>EduBlog</h1>
     <p>Your Daily Learning Companion</p>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Math</a>
-     <a href="#">English</a>
-    <a href="#">Physics</a>
-    <a href="#">Computer</a>
+      <a data-category="home">Home</a>
+      <a data-category="math">Math</a>
+      <a data-category="english">English</a>
+      <a data-category="physics">Physics</a>
+      <a data-category="computer">Computer</a>
     </nav>
-  </header>  <main>
-    <section class="post">  
-      <a href="math-tips.html.html">
-    <img src="https://raw.githubusercontent.com/yasmeenfq/Blog-Website/refs/heads/main/anoushka-puri-f1YfrZ1o2r8-unsplash.jpg" alt="Math Tips"></a>
+  </header>
+  <main>
+    <section class="post math">
+      <a href="math-tips.html">
+        <img src="https://raw.githubusercontent.com/yasmeenfq/Blog-Website/refs/heads/main/anoushka-puri-f1YfrZ1o2r8-unsplash.jpg" alt="Math Tips">
+      </a>
       <h2><a href="math-tips.html">Top 5 Math Study Tips</a></h2>
       <p class="date">2 June 2025</p>
       <p>Math ko asaan banane ke kuch zabardast tips:</p>
@@ -87,44 +86,62 @@ footer {
         <li>Revision karein</li>
       </ul>
     </section>
-    <section class="post">
-        <a href="newton-laws.html">
-  <img src="https://raw.githubusercontent.com/yasmeenfq/Blog-Website/refs/heads/main/istockphoto-1491010657-1024x1024.jpg" alt="Science Laws"></a>
-  <h2><a href="newton-laws.html">Newton’s Laws Simplified</a></h2>
-  
-  <p class="date">1 June 2025</p>
-  <p>Physics ka dar khatam! Newton ke motion ke 3 qanoon:</p>
-  <ul>
-    <li>Object rest ya motion mein rehta hai jab tak external force na lage.</li>
-    <li>F = ma (Force = mass × acceleration)</li>
-    <li>Har action ka equal aur opposite reaction hota hai.</li>
-  </ul>
-</section>
-
-<section class="post"> <a href="english-grammar.html">
-  <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="English Grammar"></a>
-  <h2><a href="english-grammar.html">English Grammar Basics</a></h2>
-  <p class="date">30 May 2025</p>
-  <p>Grammar basics mein shamil hain:</p>
-  <ul>
-    <li>Tenses: Present, Past, Future</li>
-    <li>Parts of Speech</li>
-    <li>Sentence Structure</li>
-  </ul>
-</section>
-
-<section class="post">
-    <a href="computer-history.html"> 
-  <img src="https://raw.githubusercontent.com/yasmeenfq/Blog-Website/refs/heads/main/christin-hume-mfB1B1s4sMc-unsplash.jpg" alt="Computer History"></a>
-  <h2><a href="computer-history.html">History of Computers</a></h2>
- 
- <p class="date">28 May 2025</p>
-  <p>Computer ka safar Charles Babbage se shuru hua, phir ENIAC, personal computers aur ab Artificial Intelligence tak pohnch gaya hai.</p>
-</section>
-
-  </main>  <footer>
-    <p>&copy; 2025 EduBlog. All rights reserved.</p>
+    <section class="post physics">
+      <a href="newton-laws.html">
+        <img src="https://raw.githubusercontent.com/yasmeenfq/Blog-Website/refs/heads/main/istockphoto-1491010657-1024x1024.jpg" alt="Science Laws">
+      </a>
+      <h2><a href="newton-laws.html">Newton’s Laws Simplified</a></h2>
+      <p class="date">1 June 2025</p>
+      <p>Physics ka dar khatam! Newton ke motion ke 3 qanoon:</p>
+      <ul>
+        <li>Object rest ya motion mein rehta hai jab tak external force na lage.</li>
+        <li>F = ma (Force = mass × acceleration)</li>
+        <li>Har action ka equal aur opposite reaction hota hai.</li>
+      </ul>
+    </section>
+    <section class="post english">
+      <a href="english-grammar.html">
+        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="English Grammar">
+      </a>
+      <h2><a href="english-grammar.html">English Grammar Basics</a></h2>
+      <p class="date">30 May 2025</p>
+      <p>Grammar basics mein shamil hain:</p>
+      <ul>
+        <li>Tenses: Present, Past, Future</li>
+        <li>Parts of Speech</li>
+        <li>Sentence Structure</li>
+      </ul>
+    </section>
+    <section class="post computer">
+      <a href="computer-history.html">
+        <img src="https://raw.githubusercontent.com/yasmeenfq/Blog-Website/refs/heads/main/christin-hume-mfB1B1s4sMc-unsplash.jpg" alt="Computer History">
+      </a>
+      <h2><a href="computer-history.html">History of Computers</a></h2>
+      <p class="date">28 May 2025</p>
+      <p>Computer ka safar Charles Babbage se shuru hua, phir ENIAC, personal computers aur ab Artificial Intelligence tak pohnch gaya hai.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 EduBlog. All rights reserved.</p>
   </footer>
-</body>
-    </html>
+  <script>
+    const navLinks = document.querySelectorAll("nav a");
+    const posts = document.querySelectorAll(".post");
 
+    navLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const category = this.getAttribute("data-category").toLowerCase();
+
+        posts.forEach(post => {
+          if (category === "home" || post.classList.contains(category)) {
+            post.style.display = "block";
+          } else {
+            post.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+  </html>
